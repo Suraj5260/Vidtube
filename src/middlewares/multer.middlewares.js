@@ -9,6 +9,11 @@ const storage = multer.diskStorage({
     // TODO for students
     // const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
     // change this too 
+
+    //my try
+    // const username = req.user.username
+    // const fileExtension = this.file.originalname.split('.').pop()
+    // const newFilename = `${username}.${fileExtension}`
     cb(null, file.originalname)
   }
 })
@@ -17,4 +22,3 @@ export const upload = multer({
   storage
 })
 
-// try watching from 8:00
